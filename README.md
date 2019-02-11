@@ -3,6 +3,8 @@
 LCD screen that assists the bus driver with information on route number, trip headsign, headway (if he's early or late) and upcoming stops.
 Information is taken from OneBusAway API.
 
+![Screenshot](goeuropa_bus_lcd_panel.JPG)
+
 ## Hardware requirements
 * Raspberry Pi 2/3
 * Official LCD screen + official Rpi case
