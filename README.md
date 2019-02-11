@@ -1,9 +1,9 @@
-#goEuropa's Bus Driver LCD Panel for KiedyBus/OneBusAway project
+##goEuropa's Bus Driver LCD Panel for KiedyBus/OneBusAway project
 
-## LCD screen that assists the bus driver with information on route number, trip headsign, headway (if he's early or late) and upcoming stops.
-## Information is taken from OneBusAway API.
+LCD screen that assists the bus driver with information on route number, trip headsign, headway (if he's early or late) and upcoming stops.
+Information is taken from OneBusAway API.
 
-#Hardware requirements
+##Hardware requirements
 * Raspberry Pi 2/3
 * Official LCD screen + official Rpi case
 * Internet connection (WiFi, 3G,)
@@ -17,7 +17,7 @@
 Environment used "gruntjs". In order to run it locally, enter command "grunt serve". In order to compile project to production, enter command "grunt build --force". 
 Next, copy content of "dist" folder to your webserver. Start and configure your Raspberry in Kiosk mode and autostart the prepared URL address. Configure the bus vehicle number using variable $scope.linia in main.js.
 
-#Client application
+##Client application
 
 Request to OBA API that the application generates, is based on existing key and agency id.
 It is configured in angular application. Client application consist of main.js. API is called and through one-way-binding information on vehicle is displayed. 
