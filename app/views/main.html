@@ -1,0 +1,72 @@
+    <div>
+      <div class="row" style="font-size: 200%;">
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="bg-info"><i>Najbliższy przystanek: </i></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <p class="bg-info"><span ng-show="isConnectionAndVehicle">{{najblprzystanek}}</span><span ng-hide="isConnectionAndVehicle">_</span> </p>
+            </div>
+            <div class="col-xs-6">
+              <p class="bg-info"><span ng-show="isConnectionAndVehicle">{{najblprzystanekoffset}}</span><b ng-if="delayClosest == 'late'"> dojeżdża</b><b ng-if="delayClosest == 'early'"> odjechał</b><b ng-if="delayClosest == 'ok'"> bieżący</b><span ng-hide="isConnectionAndVehicle">_</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="bg-danger">Następny przystanek: </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <p class="bg-info"><span ng-show="isConnectionAndVehicle">{{nastprzystanek}}</span><span ng-hide="isConnectionAndVehicle">_</span> </p>
+          </div>
+          <div class="col-xs-6">
+            <p class="bg-info"><span ng-show="isConnectionAndVehicle">{{przysp}}</span><span ng-hide="isConnectionAndVehicle">_</span></p>
+          </div>
+          </div>
+      </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="loader" ng-hide="isConnectionAndVehicle"> </div>
+          </div>
+          <div class="col-xs-3">
+            <!--<button class="btn btn-info" ng-click="odswiez()">Odśwież</button>-->
+          </div>
+
+          <div class="col-xs-6" style="font-size: 1.4em;">
+            <b ng-if="delay == 'late'"> opóźniony</b><b ng-if="delay == 'early'"> przyspieszony</b><i ng-if="delay == 'late'" style="color: red" class="glyphicon glyphicon-time"> Przyspiesz </i><i ng-if="delay == 'early'" style="color: blue" class="glyphicon glyphicon-time"> Zwolnij </i><i ng-if="delay == 'ok'" style="color: green" class="glyphicon glyphicon-time"> OK </i>
+          </div>
+      </div>
+      <div class="row" style="font-size: 200%;">
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="bg-primary"><i>Linia: </i></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="bg-primary"><span ng-show="isConnectionAndVehicle">{{nrlinii}}</span><span ng-hide="isConnectionAndVehicle">_</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="bg-info"><i>Kierunek: </i></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="bg-info"><span ng-show="isConnectionAndVehicle">{{kierunek}}</span><span ng-hide="isConnectionAndVehicle">_</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
